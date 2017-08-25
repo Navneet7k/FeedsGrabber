@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="navneet.com.hackernews.ErrorFragment">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/lightBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/error"
+            android:id="@+id/img"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/img"
+            android:layout_marginLeft="20dp"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+
+            android:layout_centerHorizontal="true"
+            android:text="Err.. Connection Problem??"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>
