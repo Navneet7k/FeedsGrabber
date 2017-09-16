@@ -5,7 +5,7 @@ import retrofit2.http.GET;
 
 public interface RequestInterface {
 
-    @GET("v1/articles?source=hacker-news&sortBy=latest&apiKey=9bce785607fc41c3b24cb48efe043d2f")
+    @GET("v1/articles?source=hacker-news&sortBy=latest&apiKey=\"apikey\"")
     Call<JSONResponse> getJSON();
 
 }

@@ -13,7 +13,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/card_view"
@@ -32,7 +32,7 @@
                         android:id="@+id/imageView1"
 
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="300dp"
                         android:scaleType="centerCrop"
 
                         />
@@ -166,19 +166,18 @@
                     />
                 </RelativeLayout>
 
-                <Button
-                    android:text="powered by newsapi.org"
-                    android:background="@color/newsapi"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="20dp"
-                   android:drawableLeft="@drawable/news"
 
-                    android:paddingLeft="40dp"
-                    android:layout_width="match_parent"
-                    style="@style/Widget.AppCompat.Button.Colored"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button" />
             </android.support.v7.widget.CardView>
+            <Button
+                android:text="powered by newsapi.org"
+                android:background="@color/newsapi"
+                android:drawableLeft="@drawable/news"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="40dp"
+                android:layout_width="match_parent"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:id="@+id/button" />
 
         </RelativeLayout>
 
